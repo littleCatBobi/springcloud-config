@@ -1,3 +1,14 @@
 ﻿spring:
+  profiles:
+    active: test
+---
+spring:
+  profiles: dev #开发环境
+  application:
+    name: lingluocloud-config-dev
+
+---
+spring:
+  profiles: test
   application:
     name: lingluocloud-config-test
